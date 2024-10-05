@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="Outer">
+     <form id="survey-form">
+            <h1>Survey Form</h1>
+            <p>let us know how can improve our Coding-Services</p>
+            <br>
+        <div class="sub-group">
+            <label class="label" for="name">Name</label>
+            <input type="text" placeholder="Enter your name" id="name" class="input">
+        </div>   
+            <div class="sub-group">
+            <label class="label" for="email">Email</label>
+            <input type="text" placeholder="Enter you Email" id="email" class="input">
+        </div>  
+            <div class="sub-group">
+            <label class="label" for="age" >Age</label>
+            <input type="date" id="age" class="input"> 
+        </div>
+        <div class="sub-group">
+                <label class="label" for="dropdown">which option best describe your current role ?</label>
+             
+            <select class="input" id="dropdown">
+                <option value="Student"> Student</option>
+                <option value="Teacher">teacher</option>
+            </select>
+        <div>
+        <div class="sub-group">
+                <label class="label" for="Definitely" >How likely is that you woukd recommend our CodingServices to a friend?"</label>
+                <ul style="list-style: none" class="input">
+                    <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+                    <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label></li>
+                    <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+                </ul>
+               </div>
+               <div class="sub-group">
+                <label class="label">Things that should be improved in the future</label>
+                
+                 <ul style="list-style: none;" class="input">
+                
+                   <li class="checkbox"><label><input type="checkbox"  value="fep" >Front-end-projects</label></li>
+                     <li class="checkbox"><label><input type="checkbox"  value="bep">Back-end-projects</label></li>
+                     <li class="checkbox"><label><input type="checkbox"  value="fsp" >Full-stack-projects<label></li>
+                       </ul>
+                </div>
+                <div class="commentbox">
+
+                    <textarea rows="4"  placeholder="Enter your comment here..."></textarea>
+                 
+                    <br></br>
+                 
+                   <button id="submit" type="submit">Submit</button>
+                 </div>
+
+     </form>
+                
+    </div>
+    
+</body>
+</html>
